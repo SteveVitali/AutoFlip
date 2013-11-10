@@ -17,9 +17,9 @@ public final class R {
 		public static final int ic_folder = 0x7f020002;
 	}
 	public static final class id {
-		public static final int explorer_fragment = 0x7f090004;
-		public static final int file_icon = 0x7f090005;
-		public static final int file_name = 0x7f090006;
+		public static final int explorer_fragment = 0x7f090003;
+		public static final int file_icon = 0x7f090004;
+		public static final int file_name = 0x7f090005;
 	}
 	public static final class layout {
 		public static final int chooser = 0x7f030001;

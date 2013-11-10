@@ -10,28 +10,20 @@
     android:background="#bdbdbd"
     tools:context=".MainActivity" >
 
-    <!--<TextView
-        android:id="@+id/cardText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />-->
-
     <Button
         android:id="@+id/importButton"
-        android:layout_width="170"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cardText"
         android:layout_centerHorizontal="true"
-        android:background="#4d8de8"
         android:text="Import Note Cards" />
 
     <Button
         android:id="@+id/samplePresentation"
-        android:layout_width="200"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="#4d8de8"
-        android:text="Start Sample Presentation" />
+        android:text="Start Sample Presentation"
+        />
 
 </RelativeLayout>
