@@ -7,14 +7,14 @@ int drawable ic_file 0x7f020001
 int drawable ic_folder 0x7f020002
 int drawable ic_launcher 0x7f020003
 int id action_settings 0x7f09000c
-int id cardText 0x7f090001
+int id cardText 0x7f090002
 int id editText 0x7f090007
 int id editText2 0x7f090008
 int id explorer_fragment 0x7f090004
 int id file_icon 0x7f090005
 int id file_name 0x7f090006
 int id frameLayout1 0x7f09000b
-int id importButton 0x7f090002
+int id importButton 0x7f090001
 int id mainActivity 0x7f090000
 int id nextButton 0x7f09000a
 int id previousButton 0x7f090009

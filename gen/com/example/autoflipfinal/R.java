@@ -30,14 +30,14 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f09000c;
-        public static final int cardText=0x7f090001;
+        public static final int cardText=0x7f090002;
         public static final int editText=0x7f090007;
         public static final int editText2=0x7f090008;
         public static final int explorer_fragment=0x7f090004;
         public static final int file_icon=0x7f090005;
         public static final int file_name=0x7f090006;
         public static final int frameLayout1=0x7f09000b;
-        public static final int importButton=0x7f090002;
+        public static final int importButton=0x7f090001;
         public static final int mainActivity=0x7f090000;
         public static final int nextButton=0x7f09000a;
         public static final int previousButton=0x7f090009;

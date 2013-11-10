@@ -81,7 +81,7 @@ public class PresentationActivity extends MainActivity {
 		{
 			fullText += presentation.cards.get(this.currentCard).bullets.get(i);
 		}
-			
+		
 		String[] fullList  = fullText.split("\\s+");
 		String[] spokenList=compareText.split("\\s+");
 		
@@ -102,6 +102,7 @@ public class PresentationActivity extends MainActivity {
 		}
 		Log.e("", "Full Text: "+fullText);
 		Log.e("", "Spoken Text: "+compareText);
+		Log.e("", "Ratio:"+count/fullList.length*100);
 
 		Log.e("", "THE LEVENSHABANGARANG COUNT IS: "+count);
 		
@@ -111,12 +112,14 @@ public class PresentationActivity extends MainActivity {
 	{
     	currentCard++;
     	updateCard();
+    	spokenText = "";
 	}
 	
 	public void previousCard()
 	{
 		currentCard--;
 		updateCard();
+    	spokenText = "";
 	}
 	
 	public void updateCard()

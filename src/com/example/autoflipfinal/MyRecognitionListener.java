@@ -74,7 +74,6 @@ class MyRecognitionListener implements RecognitionListener {
 		activity.startListeningAgain();
 		Log.d("Speech", "result=" + activity.spokenText);
 	}
-	
 
 	@Override
 	public void onRmsChanged(float rmsdB) {
