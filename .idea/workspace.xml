@@ -33,11 +33,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2136c6cd-3604-441e-bc25-24333264bf01" name="Default" comment="change color of background and buttons for presentation_activity&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/ipaulpro/afilechooser/R.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/presentation_activity.xml" afterPath="$PROJECT_DIR$/res/layout/presentation_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2136c6cd-3604-441e-bc25-24333264bf01" name="Default" comment="change color of background and buttons for presentation_activity&#10;" />
     <ignored path="AutoFlip.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,18 +96,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,6 +112,15 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="26" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PresentationActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/autoflipfinal/PresentationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="28" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.34146342" vertical-offset="625" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -181,13 +174,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="presentation_activity.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="presentation_activity.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/presentation_activity.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.3243243" vertical-offset="0" max-vertical-offset="1350">
+            <state line="10" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="30.74074" vertical-offset="980" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -631,7 +624,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -820,13 +813,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/autoflipfinal/PresentationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/settings_pg.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -919,7 +905,14 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.3243243" vertical-offset="0" max-vertical-offset="1350">
+        <state line="10" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="30.74074" vertical-offset="980" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/autoflipfinal/PresentationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="28" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.34146342" vertical-offset="625" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
