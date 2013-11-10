@@ -35,69 +35,11 @@ public class PresentationActivity extends MainActivity {
 		
 		MyRecognitionListener listener = new MyRecognitionListener();
 		
+		listener.setPresentationActivity(this);
+		
 		sr.setRecognitionListener(listener);
 
 		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
-		
-		class MyRecognitionListener implements RecognitionListener {
-
-			@Override
-			public void onBeginningOfSpeech() {
-				Log.d("Speech", "onBeginningOfSpeech");
-			}
-
-			@Override
-			public void onBufferReceived(byte[] buffer) {
-				Log.d("Speech", "onBufferReceived");
-			}
-
-			@Override
-			public void onEndOfSpeech() {
-				Log.d("Speech", "onEndOfSpeech");
-			}
-
-			@Override
-			public void onError(int error) {
-				Log.d("Speech", "onError");
-			}
-
-			@Override
-			public void onEvent(int eventType, Bundle params) {
-				Log.d("Speech", "onEvent");
-			}
-
-			@Override
-			public void onPartialResults(Bundle partialResults) {
-				Log.d("Speech", "onPartialResults");
-			}
-
-			@Override
-			public void onReadyForSpeech(Bundle params) {
-				Log.d("Speech", "onReadyForSpeech");
-			}
-
-			@Override
-			public void onResults(Bundle results) {
-				Log.d("Speech", "onResults");
-				ArrayList strlist = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-				for (int i = 0; i < strlist.size(); i++) {
-					tempSpokenText += strlist.get(i);
-					
-				}
-				spokenText += tempSpokenText;
-				tempSpokenText = "";
-				showSpokenText(spokenText);
-				startListeningAgain();
-				updateCard();
-				Log.d("Speech", "result=" + spokenText);
-			}
-			
-
-			@Override
-			public void onRmsChanged(float rmsdB) {
-				Log.d("Speech", "onRmsChanged");
-			}
-		}
 		
 		cardText = (TextView) findViewById(R.id.cardText);
 		updateCard();
@@ -131,8 +73,7 @@ public class PresentationActivity extends MainActivity {
 	
 	public void startListeningAgain()
 	{
-		Intent myIntent = new Intent(PresentationActivity.this, PresentationActivity.class);
-		startActivity(myIntent);
+		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
 	}
 	
 	public void nextCard()
@@ -161,6 +102,6 @@ public class PresentationActivity extends MainActivity {
 	
 	public void showSpokenText(String s) {
 		cardText.setText(s);
-		updateCard();
+		cardText.refreshDrawableState();
 	}
 }
