@@ -74,7 +74,8 @@ public class MainActivity extends Activity {
 			    Intent getContentIntent = FileUtils.createGetContentIntent();
 			    Intent intent = Intent.createChooser(getContentIntent, "Select a file");
 			    startActivityForResult(intent, REQUEST_CHOOSER);
-			    
+			 
+				
 			}
 		});
 		
@@ -87,6 +88,8 @@ public class MainActivity extends Activity {
 				Intent myIntent = new Intent(MainActivity.this, PresentationActivity.class);
 				startActivity(myIntent);
 				
+			//	Intent i = new Intent(context, MyService.class);
+			//	context.startService(i);
 			}
 		});
 		

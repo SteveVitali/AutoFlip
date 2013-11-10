@@ -32,13 +32,9 @@ class MyRecognitionListener implements RecognitionListener {
 
 	@Override
 	public void onError(int error) {
-		activity.startListeningAgain();
+		activity.startRecognizerNonsense();
 		Log.d("Speech", "onError");
-		try {
-		    // code buggy code
-		} catch (Exception e){
-		    Log.e("MYAPP", "exception", e);
-		}
+		
 	}
 
 	@Override
@@ -76,12 +72,13 @@ class MyRecognitionListener implements RecognitionListener {
 //		activity.showSpokenText(activity.spokenText);
 		
 		activity.checkIntersection();
-		activity.startListeningAgain();
+		activity.startRecognizerNonsense();
 		Log.d("Speech", "result=" + activity.spokenText);
+		
 	}
 
 	@Override
 	public void onRmsChanged(float rmsdB) {
-		Log.d("Speech", "onRmsChanged");
+
 	}
 }

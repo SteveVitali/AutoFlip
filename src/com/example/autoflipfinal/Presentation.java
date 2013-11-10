@@ -15,31 +15,28 @@ public class Presentation {
     public Presentation()
     {
     	cards = new ArrayList<NoteCard>();
-    	
+
     	ArrayList<String> strings1 = new ArrayList<String>();
-    	strings1.add("2 Chainz but I got me a few on");
-    	strings1.add("We made this application with Eclipse");
-    	strings1.add("Three more lines of a 2 Chainz song");
+    	strings1.add("Anecdote - Prepared talking points; issues keeping stack");
+    	strings1.add("Speech; looked down; bullets small; order; hard to follow");
     	
     	ArrayList<String> strings2 = new ArrayList<String>();
-    	strings2.add("We need a method to compare stuff");
-    	strings2.add("Something something algorithm");
-    	strings2.add("Shashank says it's too many words");
+    	strings2.add("Autoflip - virtual notecard; technologies");
+    	strings2.add("solve issues with Autoflip");
+
+
     	
     	ArrayList<String> strings3 = new ArrayList<String>();
-    	strings3.add("It should work with a few or a lot of words");
-    	strings3.add("It's finally working!");
-    	strings3.add("Yes! The sun is finally out!");
+    	strings3.add("Cloud computing; voice recognition");
+    	strings3.add("Most relevant; glance down at");
+
     	
     	ArrayList<String> strings4 = new ArrayList<String>();
-    	strings4.add("We need a method to compare stuff");
-    	strings4.add("Something something algorithm");
-    	strings4.add("Shashank says it's too many words");
+    	strings4.add("Demo");
+    	strings4.add("The quick brown fox jumps over the lazy dog.");
     	
     	ArrayList<String> strings5 = new ArrayList<String>();
-    	strings5.add("It should work with a few or a lot of words");
-    	strings5.add("It's finally working!");
-    	strings5.add("Yes! The sun is finally out!");
+    	strings5.add("Thank you.");
     	
     	NoteCard card1 = new NoteCard(strings1, 1);
     	NoteCard card2 = new NoteCard(strings2, 2);

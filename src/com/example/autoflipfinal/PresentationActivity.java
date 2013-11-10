@@ -19,24 +19,21 @@ import java.util.Arrays;
 
 public class PresentationActivity extends MainActivity {
 		
-	protected static final int RESULT_SPEECH = 0;
+	protected static final int RESULT_SPEECH = 1;
 	Button nextButton, previousButton;
 	TextView cardText; 
 	String tempSpokenText = new String();
 	String spokenText = new String();
 	
 	SpeechRecognizer sr;
+	MyRecognitionListener listener;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.presentation_activity);
 		
-		sr = SpeechRecognizer.createSpeechRecognizer(getApplicationContext());
-		MyRecognitionListener listener = new MyRecognitionListener();
-		listener.setPresentationActivity(this);
-		sr.setRecognitionListener(listener);
-		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
+		startRecognizerNonsense();
 		
 		cardText = (TextView) findViewById(R.id.cardText);
 		updateCard();
@@ -68,8 +65,14 @@ public class PresentationActivity extends MainActivity {
 		});
 	}
 	
-	public void startListeningAgain()
+	
+	public void startRecognizerNonsense()
 	{
+		
+		sr = SpeechRecognizer.createSpeechRecognizer(getApplicationContext());
+		listener = new MyRecognitionListener();
+		listener.setPresentationActivity(this);
+		sr.setRecognitionListener(listener);
 		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
 	}
 	
@@ -102,7 +105,7 @@ public class PresentationActivity extends MainActivity {
 		
 		float ratio = (float) count/fullList.length;
 		
-		if (ratio > .65)
+		if (ratio > .20)
 		{
 			nextCard();
 		}
