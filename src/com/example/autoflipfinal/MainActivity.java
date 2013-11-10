@@ -6,19 +6,15 @@ import android.app.Activity;
 import android.view.Menu;
 import android.os.Environment;
 import java.util.HashMap;
-import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Dialog;
 import android.app.Fragment;
-import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.content.Intent;
-import android.net.Uri;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.cos.COSDocument;
 import java.io.FileInputStream;
@@ -32,17 +28,21 @@ import java.io.File;
 import android.os.Build;
 import java.io.IOException;
 import java.io.InputStream;
-import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.AlertDialog;
 import android.util.Log;
 import java.io.FilenameFilter;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Environment;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+import android.speech.RecognizerIntent;
+import android.speech.RecognitionListener;
+import android.widget.ImageButton;
+import android.widget.Toast;
+import java.util.ArrayList;
+import android.content.Context;
+import android.speech.SpeechRecognizer;
 
 public class MainActivity extends Activity {
 
@@ -55,11 +55,13 @@ public class MainActivity extends Activity {
 	protected Presentation presentation = new Presentation();
 
 	protected static final int REQUEST_CHOOSER = 1234;
+	  
+	private static Context context;
 	
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		MainActivity.context = getApplicationContext();
 		setContentView(R.layout.activity_main);
 				
 		importButton = (Button) findViewById(R.id.importButton);
@@ -88,6 +90,7 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+
 	}
 	
 
