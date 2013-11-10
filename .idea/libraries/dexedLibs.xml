@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/afilechooser-16c18ebc8e31960c34ee16da15e0784e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-a0e691b00b86b22398c424cff3af7665.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/pdfbox-1.8.2-abe0a2dbc9f7f290c60204e7b9f6dde9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
