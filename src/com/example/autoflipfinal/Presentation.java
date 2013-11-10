@@ -31,13 +31,27 @@ public class Presentation {
     	strings3.add("It's finally working!");
     	strings3.add("Yes! The sun is finally out!");
     	
+    	ArrayList<String> strings4 = new ArrayList<String>();
+    	strings4.add("We need a method to compare stuff");
+    	strings4.add("Something something algorithm");
+    	strings4.add("Shashank says it's too many words");
+    	
+    	ArrayList<String> strings5 = new ArrayList<String>();
+    	strings5.add("It should work with a few or a lot of words");
+    	strings5.add("It's finally working!");
+    	strings5.add("Yes! The sun is finally out!");
+    	
     	NoteCard card1 = new NoteCard(strings1, 1);
     	NoteCard card2 = new NoteCard(strings2, 2);
     	NoteCard card3 = new NoteCard(strings3, 3);
+    	NoteCard card4 = new NoteCard(strings4, 4);
+    	NoteCard card5 = new NoteCard(strings5, 5);
     	
     	cards.add(card1);
     	cards.add(card2);
     	cards.add(card3);
+    	cards.add(card4);
+    	cards.add(card5);
 
     }
 }

@@ -15,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:background="#4d8de8"
         android:text="Previous" />
 
     <TextView
@@ -36,7 +35,6 @@
         android:layout_alignBottom="@+id/previousButton"
         android:layout_alignParentRight="true"
         android:layout_marginRight="15dp"
-        android:background="#4d8de8"
         android:text="    Next    " />
 
     <FrameLayout
@@ -47,6 +45,7 @@
         android:layout_alignLeft="@+id/cardText"
         android:layout_marginLeft="58dp"
         android:layout_toLeftOf="@+id/nextButton" >
+
     </FrameLayout>
 
     <FrameLayout
@@ -56,6 +55,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/previousButton" >
+
     </FrameLayout>
 
     <Space
@@ -69,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/frameLayout1" >
+
     </FrameLayout>
 
     <FrameLayout

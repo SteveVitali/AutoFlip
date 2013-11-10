@@ -77,7 +77,7 @@ public class PresentationActivity extends MainActivity {
 	{
 		String fullText = "";
 		String compareText = spokenText;
-		for(int i=0; i<presentation.cards.size(); i++)
+		for(int i=0; i<presentation.cards.get(currentCard).bullets.size(); i++)
 		{
 			fullText += presentation.cards.get(this.currentCard).bullets.get(i);
 		}
@@ -96,14 +96,20 @@ public class PresentationActivity extends MainActivity {
 			{
 				if (fullList[i].equals(spokenList[j])){
 					count++;
-					Log.e("", fullList[i] +" is equal to "+spokenList[j]);
 				}
 			}
 		}
+		
+		float ratio = (float) count/fullList.length;
+		
+		if (ratio > .65)
+		{
+			nextCard();
+		}
+		
 		Log.e("", "Full Text: "+fullText);
 		Log.e("", "Spoken Text: "+compareText);
-		Log.e("", "Ratio:"+count/fullList.length*100);
-
+		Log.e("", "Ratio:"+ratio);
 		Log.e("", "THE LEVENSHABANGARANG COUNT IS: "+count);
 		
 	}
@@ -135,7 +141,7 @@ public class PresentationActivity extends MainActivity {
 	}
 	
 	public void showSpokenText(String s) {
-		cardText.setText(s);
-		cardText.refreshDrawableState();
+//		cardText.setText(s);
+//		cardText.refreshDrawableState();
 	}
 }

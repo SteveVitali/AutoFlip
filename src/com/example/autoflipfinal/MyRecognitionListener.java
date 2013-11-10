@@ -34,6 +34,11 @@ class MyRecognitionListener implements RecognitionListener {
 	public void onError(int error) {
 		activity.startListeningAgain();
 		Log.d("Speech", "onError");
+		try {
+		    // code buggy code
+		} catch (Exception e){
+		    Log.e("MYAPP", "exception", e);
+		}
 	}
 
 	@Override
@@ -68,7 +73,7 @@ class MyRecognitionListener implements RecognitionListener {
 		
 		activity.spokenText += activity.tempSpokenText;
 		activity.tempSpokenText = "";
-		activity.showSpokenText(activity.spokenText);
+//		activity.showSpokenText(activity.spokenText);
 		
 		activity.checkIntersection();
 		activity.startListeningAgain();
