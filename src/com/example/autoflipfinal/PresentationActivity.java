@@ -15,10 +15,11 @@ import android.view.Menu;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PresentationActivity extends MainActivity {
 		
-	protected static final int RESULT_SPEECH = 1;
+	protected static final int RESULT_SPEECH = 0;
 	Button nextButton, previousButton;
 	TextView cardText; 
 	String tempSpokenText = new String();
@@ -32,13 +33,9 @@ public class PresentationActivity extends MainActivity {
 		setContentView(R.layout.presentation_activity);
 		
 		sr = SpeechRecognizer.createSpeechRecognizer(getApplicationContext());
-		
 		MyRecognitionListener listener = new MyRecognitionListener();
-		
 		listener.setPresentationActivity(this);
-		
 		sr.setRecognitionListener(listener);
-
 		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
 		
 		cardText = (TextView) findViewById(R.id.cardText);
@@ -74,6 +71,40 @@ public class PresentationActivity extends MainActivity {
 	public void startListeningAgain()
 	{
 		sr.startListening(RecognizerIntent.getVoiceDetailsIntent(getApplicationContext()));
+	}
+	
+	public void checkIntersection()
+	{
+		String fullText = "";
+		String compareText = spokenText;
+		for(int i=0; i<presentation.cards.size(); i++)
+		{
+			fullText += presentation.cards.get(this.currentCard).bullets.get(i);
+		}
+			
+		String[] fullList  = fullText.split("\\s+");
+		String[] spokenList=compareText.split("\\s+");
+		
+	//	int dist = LevenshteinDistance.computeDistance(fullText, compareText);
+		
+	//	Log.e("", "THE LEVENSHABANGARANG DISTANCE IS: "+dist);
+		
+		int count = 0;
+		for (int i = 0; i < fullList.length; i++) 
+		{
+			for (int j = 0; j < spokenList.length; j++) 
+			{
+				if (fullList[i].equals(spokenList[j])){
+					count++;
+					Log.e("", fullList[i] +" is equal to "+spokenList[j]);
+				}
+			}
+		}
+		Log.e("", "Full Text: "+fullText);
+		Log.e("", "Spoken Text: "+compareText);
+
+		Log.e("", "THE LEVENSHABANGARANG COUNT IS: "+count);
+		
 	}
 	
 	public void nextCard()

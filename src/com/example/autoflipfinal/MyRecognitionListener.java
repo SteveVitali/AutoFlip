@@ -32,6 +32,7 @@ class MyRecognitionListener implements RecognitionListener {
 
 	@Override
 	public void onError(int error) {
+		activity.startListeningAgain();
 		Log.d("Speech", "onError");
 	}
 
@@ -41,8 +42,13 @@ class MyRecognitionListener implements RecognitionListener {
 	}
 
 	@Override
-	public void onPartialResults(Bundle partialResults) {
-		Log.d("Speech", "onPartialResults");
+	public void onPartialResults(Bundle results) {
+		/*String[] results1 = results.getStringArray("com.google.android.voicesearch.UNSUPPORTED_PARTIAL_RESULTS");
+		activity.spokenText += results1.toString();
+		activity.tempSpokenText = "";
+		activity.showSpokenText(activity.spokenText);
+		activity.startListeningAgain();
+		Log.d("Speech", "result=" + activity.spokenText);*/
 	}
 
 	@Override
@@ -54,13 +60,17 @@ class MyRecognitionListener implements RecognitionListener {
 	public void onResults(Bundle results) {
 		Log.d("Speech", "onResults");
 		ArrayList strlist = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-		for (int i = 0; i < strlist.size(); i++) {
-			activity.tempSpokenText += strlist.get(i);
+	//	for (int i = 0; i < strlist.size(); i++) {
+	//		activity.tempSpokenText += strlist.get(i);
 			
-		}
+	//	}
+		activity.tempSpokenText += strlist.get(0);
+		
 		activity.spokenText += activity.tempSpokenText;
 		activity.tempSpokenText = "";
 		activity.showSpokenText(activity.spokenText);
+		
+		activity.checkIntersection();
 		activity.startListeningAgain();
 		Log.d("Speech", "result=" + activity.spokenText);
 	}

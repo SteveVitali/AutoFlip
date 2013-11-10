@@ -17,9 +17,9 @@ public class Presentation {
     	cards = new ArrayList<NoteCard>();
     	
     	ArrayList<String> strings1 = new ArrayList<String>();
-    	strings1.add("This is a notecard with words");
+    	strings1.add("2 Chainz but I got me a few on");
     	strings1.add("We made this application with Eclipse");
-    	strings1.add("Java is a programming language");
+    	strings1.add("Three more lines of a 2 Chainz song");
     	
     	ArrayList<String> strings2 = new ArrayList<String>();
     	strings2.add("We need a method to compare stuff");
