@@ -28,8 +28,8 @@ public class Presentation {
     	
     	ArrayList<String> strings3 = new ArrayList<String>();
     	strings3.add("It should work with a few or a lot of words");
-    	strings3.add("We got all the niggly shit out of the way");
-    	strings3.add("You know what, uhm, goddamnit, Steve.");
+    	strings3.add("It's finally working!");
+    	strings3.add("Yes! The sun is finally out!");
     	
     	NoteCard card1 = new NoteCard(strings1, 1);
     	NoteCard card2 = new NoteCard(strings2, 2);
