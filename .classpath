@@ -7,5 +7,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="/Users/stevejohnvitali/Desktop/AutoFlipFinal/libs/pdfbox-1.8.2.jar"/>
 	<classpathentry kind="lib" path="/Users/stevejohnvitali/Desktop/AutoFlipFinal/libs/aFileChooser"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

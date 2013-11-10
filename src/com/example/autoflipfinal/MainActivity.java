@@ -41,10 +41,12 @@ import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Environment;
+import android.view.MotionEvent;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-	protected int currentCard; 
+	protected int currentCard = 0;
 	
 	protected Button importButton, samplePresentation;
 	
@@ -54,11 +56,12 @@ public class MainActivity extends Activity {
 
 	protected static final int REQUEST_CHOOSER = 1234;
 	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+				
 		importButton = (Button) findViewById(R.id.importButton);
 		importButton.setOnClickListener(new Button.OnClickListener() {
 			
@@ -80,14 +83,14 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(MainActivity.this, PresentationActivity.class);
-				Log.d("print","here1");
 				startActivity(myIntent);
-				Log.d("print","here2");
 				
 			}
 		});
+		
 	}
 	
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	    switch (requestCode) {
