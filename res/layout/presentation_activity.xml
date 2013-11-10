@@ -6,7 +6,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     android:screenOrientation="landscape"
+=======
+>>>>>>> 11043cfc651cc980cf03818efff9a05122621dc1
     android:background="#bdbdbd"
     tools:context=".PresentationActivity" >
 
