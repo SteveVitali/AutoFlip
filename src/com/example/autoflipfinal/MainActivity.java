@@ -44,14 +44,15 @@ import android.os.Environment;
 
 public class MainActivity extends Activity {
 
+	protected int currentCard; 
 	
-	private Button importButton, samplePresentation;
+	protected Button importButton, samplePresentation;
 	
-	private File file;
+	protected File file;
 	
-	private Presentation presentation = new Presentation();
+	protected Presentation presentation = new Presentation();
 
-	private static final int REQUEST_CHOOSER = 1234;
+	protected static final int REQUEST_CHOOSER = 1234;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -2,12 +2,11 @@ package com.example.autoflipfinal;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.widget.TextView;
 
-public class PresentationActivity extends Activity {
-	
-	Presentation presentation;
-	
+public class PresentationActivity extends MainActivity {
+		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -15,7 +14,12 @@ public class PresentationActivity extends Activity {
 //		
 		TextView cardText = (TextView) findViewById(R.id.cardText);
 //		
-//		cardText.setText((CharSequence) presentation.cards.get(1).toString().subSequence(0,  presentation.cards.get(1).toString().length()));
+		String text = new String();
+
+		for(int j=0; j<presentation.cards.get(currentCard).bullets.size(); j++)
+		{
+			text = text + presentation.cards.get(currentCard).bullets.get(j).toString()+"\n";
+		}
+		cardText.setText(text+"");
 	}	
-	
 }
